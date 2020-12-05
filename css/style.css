@@ -1,0 +1,41 @@
+.payAndCry{
+    width: 600px;
+    height: 250px;
+    margin: 50px auto;
+    background-color: antiquewhite;
+}
+.form{
+    width: 600px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "h h"
+                         "t i"
+}
+.form h2{
+    text-align: center;
+    grid-area: h;
+}
+.text{
+    grid-area: t;
+}
+.inputs{
+    grid-area: i;
+    text-align: right;
+}
+.text p{
+    margin:  6px 20px;
+}
+.inputs input{
+    margin: 2px 20px;
+    width: 250px;
+}
+.text p:last-child, .inputs input:last-child{
+    font-size: 1.2rem;
+    margin-top: 40px;
+    font-weight: bold;
+}
+.text p:last-child{
+    margin-top:45px;
+}
